@@ -3,47 +3,60 @@
     <head>
         <title>Services</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./icons/fontawesome-free-6.4.2-web/css/all.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <span>ND</span>
+        <header class="navbar is-black p-2 ">
+            <div class="navbar-brand has-text-centered" style=" height: 40px;">
+                <div class="has-background-danger">
+                    <span class="navbar-item has-text-white is-size-4">ND</span>
+                </div>
+                <div class="navbar-burger has-text-white" id="burger">
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="./AboutMe.html">About</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./ContactMe.html">Contact</a></li>
+            <nav class="navbar-menu is-size-5 " id="nav-links">
+                <ul class="navbar-end has-background-black">
+                    <li><a href="./Home.html" class="navbar-item has-text-white">Home</a></li>
+                    <li><a href="./AboutMe.html" class="navbar-item has-text-white">About</a></li>
+                    <li><a href="./Projects.html" class="navbar-item has-text-white">Projects</a></li>
+                    <li><a href="./Services.html" class="navbar-item has-text-white">Services</a></li>
+                    <li><a href="./ContactMe.html" class="navbar-item has-text-white">Contact</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggler"><i class="fas fa-bars"></i></div>
-            <div id="nav-drop"></div>
         </header>
         <main>
             <div id="services-main">
                 <section  id="section-1">
-                    <div>
-                        <h1>Services</h1>
-                        <div class="underline"></div>
-                        <p>Welcome to my Software Engineer Services
-                            page, where I offer a range of expertise
-                            to meet your software development needs.
-                            With a wealth of experience in the
-                            industry, I'm well-equipped to deliver
-                            tailored solutions for a variety of
-                            projects. Here are the services I provide:</p>
-                        <a href="./ContactMe.html" class="button-link">Contact Me</a>
+                    <div class="mx-6  my-6">
+                        <div class="columns is-centered is-vcentered ">
+                            <div class="column is-half has-text-centered">
+                                <h1 class="is-size-2 has-text-centered has-text-weight-bold">Services</h1>
+                                <div class="underline"></div>
+                                <p class="has-text-centered my-3">Welcome to my Software Engineer Services
+                                    page, where I offer a range of expertise
+                                    to meet your software development needs.
+                                    With a wealth of experience in the
+                                    industry, I'm well-equipped to deliver
+                                    tailored solutions for a variety of
+                                    projects. Here are the services I provide:</p>
+                                    <div class="columns is-centered pt-5">
+                                        <div class="column is-half"><a href="./ContactMe.html" class="button is-danger is-rounded is-centered">Conatact</a></div>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
+
                 </section>
-                <section id="section-2">
-                    <div>
-                        <div class="services">
-                            <div>
-                                <h3>Full Stack development</h3>
+                <section>
+                    <div class="mx-2 showcase">
+                        <div class="columns is-mobile is-vcentered is-centered showcase mb-6">
+                            <div class="column is-6">
+                                <h3 class="is-size-4 has-text-weight-bold">Full Stack development</h3>
                                 <p>With proficiency in both frontend
                                      and backend technologies, I offer
                                      end-to-end development services.
@@ -52,24 +65,24 @@
                                      backend systems, and integrating
                                      databases and third-party APIs.</p>
                             </div>
-                            <video src="./videos/production_id_4974884(1080p).mp4" loop autoplay></video>
+                            <video class="is-6" src="./videos/production_id_4974884(1080p).mp4" style="width: 30%; border-radius: 10px" loop autoplay></video>
                         </div>
 
-                        <div class="services">
-                            <video src="./videos/codes_-_23355(720p).mp4" loop autoplay></video>
-                            <div>
-                                <h3>Application Optimization</h3>
-                                <p>Is your existing application experiencing
-                                    performance bottlenecks? I specialize
-                                    in optimizing code and architecture to
-                                    enhance speed, responsiveness, and overall
-                                    efficiency.</p>
-                            </div>
+                        <div class="columns is-mobile is-vcentered is-centered showcase my-6">
+                                <video class="is-6" src="./videos/codes_-_23355(720p).mp4" style="width: 30%; border-radius: 10px" loop autoplay></video>
+                                <div class="column is-6">
+                                    <h3 class="is-size-4 has-text-weight-bold">Application Optimization</h3>
+                                    <p>Is your existing application experiencing
+                                        performance bottlenecks? I specialize
+                                        in optimizing code and architecture to
+                                        enhance speed, responsiveness, and overall
+                                        efficiency.</p>
+                                </div>
                         </div>
 
-                        <div class="services">
-                            <div>
-                                <h3>Code Reviews and QA</h3>
+                        <div class="columns is-mobile is-vcentered is-centered showcase my-6">
+                            <div class="column is-6">
+                                <h3 class="is-size-4 has-text-weight-bold">Code Reviews and QA</h3>
                                 <p>Thorough code reviews are crucial for
                                     identifying potential issues and ensuring
                                     the highest quality standards. I provide
@@ -78,13 +91,13 @@
                                     code readability, maintainability, and
                                     security.</p>
                             </div>
-                            <video src="./videos/coding_-_123872(720p).mp4" loop autoplay></video>
+                            <video src="./videos/coding_-_123872(720p).mp4" style="width: 30%; border-radius: 10px" loop autoplay></video>
                         </div>
 
-                        <div class="services">
-                            <video src="./videos/laptop_-_1657(720p).mp4" loop autoplay></video>
-                            <div>
-                                <h3>Maintenance and Support</h3>
+                        <div class="columns is-mobile is-vcentered is-centered showcase my-6">
+                            <video src="./videos/laptop_-_1657(720p).mp4" style="width: 30%; border-radius: 10px" loop autoplay></video>
+                            <div class="column is-6">
+                                <h3 class="is-size-4 has-text-weight-bold">Maintenance and Support</h3>
                                 <p>Once your software is deployed, I offer
                                     ongoing maintenance and support services
                                     to ensure it remains up-to-date, secure,
@@ -95,10 +108,10 @@
                         </div>
 
                     </div>
-                    <div id="service-price">
-                        <div id="price-table">
-                            <h2>Services and Pricing</h2>
-                            <table>
+                    <div class="columns is-vcentered is-centered mx-4" id="service-price">
+                        <div class="column is-7" id="price-table">
+                            <h2 class="is-size-5 has-text-weight-bold">Services and Pricing</h2>
+                            <table class="table is-bordered">
                                 <tr>
                                     <th>Service</th>
                                     <th>Description</th>
@@ -133,8 +146,11 @@
                         </div>
 
                         <article>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <h2 id="call">&nbsp;Let's Get Started</h2>
+                            <div class="mx-1 columns is-mobile is-vcentered">
+                                <i class="fa-solid fa-thumbs-up is-size-4"></i>
+                                <h2 class="is-size-4 has-text-weight-bold id="call">&nbsp;Let's Get Started</h2>
+                            </div>
+
                             <p>If you're interested in any of the services
                                 listed above or have a unique project
                                 in mind, feel free to reach out to me at
@@ -151,33 +167,34 @@
             </div>
 
         </main>
-        <footer>
-            <div id="add-info">
-                <div class="address">
-                  <h2>Address</h2>
-                  <address>
-                      <p>Ethiopia, Addis Ababa</p>
-                      <p>5kilo kingGeorge VI Street</p>
-                      <p>Email: nahafile@gmail.com</p>
-                      <p>phone: +251 920 375 653</p>
-                  </address>
+        <footer class="has-background-black has-text-white mt-6 px-6">
+            <div class="columns is-centered is-vcentered" id="add-info">
+                <div class="column is-half">
+                    <h2 class="is-size-5">Address</h2>
+                    <address>
+                        <p>Ethiopia, Addis Ababa</p>
+                        <p>5kilo kingGeorge VI Street</p>
+                        <p>Email: nahafile@gmail.com</p>
+                        <p>phone: +251 920 375 653</p>
+                    </address>
                 </div>
 
-                <div id="social">
-                    <h2>Social media</h2>
-                    <div>
-                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a>
-                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github"></i></a>
-                      <a href="#"><i class="facebook fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="twitter fa-brands fa-x-twitter"></i></a>
-                      <a href="#"><i class="youtube fa-brands fa-youtube"></i></a>
+                <div class="column has-text-centered is-size-4">
+                    <h2 class="is-size-5">Social media</h2>
+                    <div >
+                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin has-text-white is-size-5"></i></a>
+                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github has-text-white is-size-5"></i></a>
+                      <a href="#"><i class="facebook fa-brands fa-facebook-f has-text-white is-size-5"></i></a>
+                      <a href="#"><i class="twitter fa-brands fa-x-twitter has-text-white is-size-5"></i></a>
+                      <a href="#"i class="youtube fa-brands fa-youtube has-text-white is-size-5"></i></a>
                     </div>
                 </div>
-
             </div>
-            <div id="copyright">
-                <span> &copy; Copyright 2023. Made by <a>Naol Daba</a></span>
+            <div class="has-text-centered is-size-7" id="copyright">
+                <div class="has-background-white is-size-2" style="height: 2px;"></div>
+                <span> &copy; Copyright 2023. Made by <a class="has-text-white">Naol Daba</a></span>
             </div>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>

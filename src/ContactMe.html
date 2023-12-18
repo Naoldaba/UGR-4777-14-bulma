@@ -3,85 +3,115 @@
     <head>
         <title>ContactMe</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./icons/fontawesome-free-6.4.2-web/css/all.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <span>ND</span>
+        <header class="navbar is-black p-2 ">
+            <div class="navbar-brand has-text-centered" >
+                <div class="has-background-danger">
+                    <span class="navbar-item has-text-white is-size-4">ND</span>
+                </div>
+                <div class="navbar-burger has-text-white" id="burger">
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="./AboutMe.html">About</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./ContactMe.html">Contact</a></li>
+            <nav class="navbar-menu is-size-5 " id="nav-links">
+                <ul class="navbar-end has-background-black">
+                    <li><a href="./Home.html" class="navbar-item has-text-white">Home</a></li>
+                    <li><a href="./AboutMe.html" class="navbar-item has-text-white">About</a></li>
+                    <li><a href="./Projects.html" class="navbar-item has-text-white">Projects</a></li>
+                    <li><a href="./Services.html" class="navbar-item has-text-white">Services</a></li>
+                    <li><a href="./ContactMe. class=" class="navbar-item has-text-white">Contact</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggler"><i class="fas fa-bars"></i></div>
-            <div id="nav-drop" ></div>
         </header>
         <main>
             <section>
-                <div id="container">
-                    <div class="intro">
-                        <h1>CONTACT</h1>
-                        <div class="underline"></div>
-                        <p>Feel free to Contact me by submitting the
-                            form below and I will get back to you
-                            as soon as possible
-                        </p>
-
-                        <a href="./data/My_CV.pdf" download="NaolD_CV" class="button-link">Download CV</a>
-
+                <div id="container" class="mx-6 pb-6">
+                    <div class="columns is-vcentered is-centered">
+                        <div class="column is-half has-text-centered my-6">
+                            <h1 class="is-size-2 has-text-weight-bold">CONTACT</h1>
+                            <div class="underline"></div>
+                            <p>Feel free to Contact me by submitting the
+                                form below and I will get back to you
+                                as soon as possible
+                            </p>
+                            <div class="columns is-centered pt-5">
+                                <div class="column is-half"><a href="#" download="NaolD_CV" class="button is-danger is-rounded is-centered">Download CV</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <form>
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Enter Your Name">
+
+                    <form class="columns is-vcentered is-centered" style="height: 400px;">
+                        <div class="column is-5 has-background-grey-lighter">
+                            <div>
+                                <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Text input">
+                                </div>
+                                </div>
+                                <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                                    <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    </span>
+                                </div>
+                                <p class="help is-danger">This email is invalid</p>
+                                </div>
+                                <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                </div>
+                                </div>
+                                <div class="control">
+                                <button class="button is-link has-background-danger">Submit</button>
+                                </div>
+                            </div>
+
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter Your Email">
-                        </div>
-                        <div>
-                            <label>Message</label>
-                            <textarea placeholder="Enter Your Message"></textarea>
-                        </div>
-                        <button type="submit">Send Message</button>
+
                     </form>
                 </div>
             </section>
         </main>
-        <footer>
-            <div id="add-info">
-                <div class="address">
-                  <h2>Address</h2>
-                  <address>
-                      <p>Ethiopia, Addis Ababa</p>
-                      <p>5kilo kingGeorge VI Street</p>
-                      <p>Email: nahafile@gmail.com</p>
-                      <p>phone: +251 920 375 653</p>
-                  </address>
+        <footer class="has-background-black has-text-white mt-6 px-6">
+            <div class="columns is-centered is-vcentered" id="add-info">
+                <div class="column is-half">
+                    <h2 class="is-size-5">Address</h2>
+                    <address>
+                        <p>Ethiopia, Addis Ababa</p>
+                        <p>5kilo kingGeorge VI Street</p>
+                        <p>Email: nahafile@gmail.com</p>
+                        <p>phone: +251 920 375 653</p>
+                    </address>
                 </div>
 
-                <div id="social">
-                    <h2>Social media</h2>
-                    <div>
-                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a>
-                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github"></i></a>
-                      <a href="#"><i class="facebook fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="twitter fa-brands fa-x-twitter"></i></a>
-                      <a href="#"><i class="youtube fa-brands fa-youtube"></i></a>
+                <div class="column has-text-centered is-size-4">
+                    <h2 class="is-size-5">Social media</h2>
+                    <div >
+                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin has-text-white is-size-5"></i></a>
+                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github has-text-white is-size-5"></i></a>
+                      <a href="#"><i class="facebook fa-brands fa-facebook-f has-text-white is-size-5"></i></a>
+                      <a href="#"><i class="twitter fa-brands fa-x-twitter has-text-white is-size-5"></i></a>
+                      <a href="#"i class="youtube fa-brands fa-youtube has-text-white is-size-5"></i></a>
                     </div>
                 </div>
-
             </div>
-            <div id="copyright">
-                <span> &copy; Copyright 2023. Made by <a>Naol Daba</a></span>
+            <div class="has-text-centered is-size-7" id="copyright">
+                <div class="has-background-white is-size-2" style="height: 2px;"></div>
+                <span> &copy; Copyright 2023. Made by <a class="has-text-white">Naol Daba</a></span>
             </div>
-        </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>
